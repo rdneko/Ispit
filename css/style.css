@@ -1,0 +1,229 @@
+/* NAVIGACIJA */
+body {
+    margin: 0%;
+    
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    text-align: center;
+}
+.navigacija ul{
+    list-style: none;
+    background-color:hsl(239, 76%, 60%) ;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navigacija a{
+  color: beige;  
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+.navigacija a:hover{
+    background-color:hsl(239, 76%, 20%) ;
+}
+.navigacija li{
+    float: left;
+}
+
+/* ZA MJENJANJE SLIKE*/
+.slajd{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slajd img{
+    width: 300px;
+    height: 200px;
+    display: none;
+}
+img.postavislajd{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slajd{
+    margin-top: 5%;
+    margin-left: 50%;
+}
+.slajd button{
+   position: absolute;
+   top: 40%;
+   transform: translate(-50%);
+   font-size: 2.5rem;
+   padding: 1px 2px;
+   background-color: transparent;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+.slajd button:hover{
+    background-color:rgba(0, 0, 0, 0.371); 
+    transition-duration: 299ms;
+}
+.pros{
+ left: 0.3em;
+}
+.sled{
+ left: 7.2em;
+}
+@keyframes  fade {
+    from {opacity: .5;}
+    to {opacity: 1;} 
+}
+/* Dizajn sajta*/
+.uredi{
+    display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto;
+}
+.tekst1{
+    border-style: outset;
+    outline-color: aqua;
+    grid-column: 1/4;
+    grid-row: 1/2 ;
+    padding-left: 1%;
+}
+.logo{
+    grid-row: 1/3;
+    grid-column:4/6 ;
+    margin-left: 3%;
+    margin-top: 40%;
+}
+.slajd{
+    
+    grid-column: 2;
+    grid-row: 2/3;
+}
+.logo1{
+    grid-row: 3/4;
+    grid-column: 1 ;
+    margin-top: 60%;
+    margin-right: 6%;
+}
+.tekst2{
+    border-style: outset;
+    outline-color: aqua;
+    margin-top: 1%;
+    grid-column: 2/6;
+    grid-row: 3/5 ;
+    padding-left: 1%;
+}
+#tekst3{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    grid-column: 1/6;
+    grid-row: 5/7 ;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 1%;
+}
+
+/* Kontakt */
+.dugmeposalji button{
+    font-size: 100%;
+    background-color: hsl(239, 76%, 60%); 
+    color: white; 
+    border: 2px solid black; 
+    border-radius: 5px;
+    width: 80px;
+    height: 25px;  
+    margin-left: 60%;
+    margin-bottom: 3px;
+    box-shadow: 2px 2px 0 0 white, 3px 3px 0 0 black;
+    transition-duration: 200ms;
+}
+.dugmeposalji button:hover{
+    cursor: pointer;
+    background-color:hsl(239, 76%, 50%);
+    box-shadow: 3px 3px 0 0 white,5px 5px 0 0 black;
+    transform: translate(-2px, -2px);
+}
+.kontakti{
+   background-color: white; 
+   margin-left: 20%;
+   margin-right: 30%; 
+   margin-top: 5%; 
+   border-style: outset;
+   height: 520px;
+}
+.popuni{
+    padding-left: 15%;
+}
+.kontakti h2{
+    padding-left: 2%;
+}
+
+.ikona{
+    width:20px;
+    height:20px;
+    align-items: end;
+}
+footer {
+    display: flex;
+    width: 100%;
+}
+.ikonice{
+    flex-wrap: wrap;
+    padding-left: 5%;
+    flex-direction: column;
+    background-color: darkgray;
+    color: white;  
+    align-items: flex-start; 
+    width: 100%;  
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+.ikonice button:hover{
+    cursor: pointer;
+}
+.ikonice1{
+    flex-wrap: wrap;
+    padding-left: 10%;
+    flex-direction: column;
+    background-color: darkgray;
+    color: white;  
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+#odje{
+    color: red;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+#Poruka{
+   height: 80px;
+   width: 200px;
+   transition: all 0.2s;
+   max-width: 50%;
+   max-height: 240px;
+   min-width: 50%;
+   min-height: 240px;
+}
+/* dizajn za O nama*/
+.tsOnama{
+    display: flex;
+    margin-top: 10%;
+    margin-right: 25%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    gap: 10%;
+}
+.videoOnama{
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+.slikeOnama{
+ margin-top: 25%;
+}
+
